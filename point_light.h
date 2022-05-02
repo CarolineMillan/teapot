@@ -9,8 +9,7 @@
 #define POINT_LIGHT_H_
 
 // PointLight is a child class of Light and implements a light
-// with constant value in a given direction. The light has no position
-// and can be treated as infinitely far away.
+// that emmits from a single point.
 
 #pragma once
 #include "light.h"
