@@ -44,7 +44,7 @@ Photon::Photon()
 
 }
 
-Photon::Photon(PointLight L) //what inputs? decide later.
+Photon::Photon(PointLight L)
 {
 	//generate a random photon at light source
 	this->start_pt = L.point;
@@ -80,10 +80,10 @@ Photon::Photon(PointLight L) //what inputs? decide later.
 
 	w = dis(gen)/100;
 
-
-
 	BRDF = BRDF_s + BRDF_d;
 }
+
+// the ray generated in the following is used to see where the photon intersects the scene
 
 void Photon::ray(Ray &r)
 {
@@ -92,6 +92,7 @@ void Photon::ray(Ray &r)
 	r.direction = direction;
 }
 
+// russian roulette decides whether the photon is absorbed, transmitted or reflected
 
 //russian roulette on rgb photons seperately
 void Photon::g_russian_roulette(Hit h, int w, int &new_w)
