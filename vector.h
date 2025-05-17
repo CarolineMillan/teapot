@@ -112,9 +112,11 @@ public:
 
 	Vector& operator=(Vector other)
 	{
-	  x = other.x;
-	  y = other.y;
-	  z = other.z;
+	  Vector t;
+	  t.x = other.x;
+	  t.y = other.y;
+	  t.z = other.z;
+	  return t;
 	}
 
 	friend Vector operator+(const Vector &a, const Vector &b)
