@@ -1,6 +1,6 @@
 # teapot
 
-This is all the code I have from my Advanced Computer Graphics coursework, rendering the Utah Teapot via photon mapping. This is not the final version of the code that I submitted. I didn't know about version control at the time I wrote this, and my laptop died not long afterwards, so this is a version I had saved to the cloud a few weeks before submission. 
+This is all the code I have from my Advanced Computer Graphics coursework, rendering the Utah Teapot using photon mapping. This is not the final version of the code that I submitted. I didn't know about version control at the time I wrote this, and my laptop died not long afterwards, so this is a version I had saved to the cloud a few weeks before submission. 
 
 This was my first introduction to coding projects larger than one or two functions. It was also my first time coding in C++, or any OOP language.
 
